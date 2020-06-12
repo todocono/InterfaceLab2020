@@ -1,10 +1,8 @@
-// IMPORTANT
-// this is not a working example, this is just to show how to set the library
-// if you need a working example please see the other example
 
-/* Inputs and outputs with Unity
+/*
   Interface Lab 2020 Summer
-
+  Inputs from Arduino are still working (IMU)
+  Outputs from Unity come in asynchronous mode and they don't interrupt Arduino, they just change it's behavior
 
   Using code examples and libraries from:
 

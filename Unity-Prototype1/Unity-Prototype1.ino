@@ -1,7 +1,22 @@
-// IMPORTANT
-// this is not a working example, this is just to show how to set the library
-// if you need a working example please see the other example
 
+/* 
+  Interface Lab 2020 Summer
+  Inputs from Arduino (IMU)
+
+  Arduino periodically reports the new status of the pitch, roll and yaw to Unity.
+  To run this code, you will need to install the Fusion Library first.
+  
+  Using code examples and libraries from:
+
+  LSM6DS3 IMU sensor by Riccardo Rizzo https://www.arduino.cc/en/Reference/ArduinoLSM6DS3
+  Fusion Library https://github.com/aster94/SensorFusion 
+  Madgwick algorithm https://github.com/PaulStoffregen/MadgwickAHRS
+
+  This example code is in the public domain.
+
+  modified 11 June 2020
+  by Rodolfo Cossovich
+*/
 
 #include "SensorFusion.h" //SF
 SF fusion;
@@ -45,7 +60,7 @@ void loop() {
     deltat = fusion.deltatUpdate(); //this have to be done before calling the fusion update
     //choose only one of these two:
     //fusion.MahonyUpdate(gx*DEG_TO_RAD, gy*DEG_TO_RAD, gz*DEG_TO_RAD, ax*DEG_TO_RAD, ay*DEG_TO_RAD, az*DEG_TO_RAD, deltat);  //mahony is suggested if there isn't the mag and the mcu is slow
-    fusion.MadgwickUpdate(gx*DEG_TO_RAD, gy*DEG_TO_RAD, gz*DEG_TO_RAD, ax*DEG_TO_RAD, ay*DEG_TO_RAD, az*DEG_TO_RAD, mx, my, mz, deltat);  //else use the magwick, it is slower but more accurate
+    fusion.MadgwickUpdate(gx * DEG_TO_RAD, gy * DEG_TO_RAD, gz * DEG_TO_RAD, ax * DEG_TO_RAD, ay * DEG_TO_RAD, az * DEG_TO_RAD, mx, my, mz, deltat); //else use the magwick, it is slower but more accurate
 
     pitch = fusion.getPitch();
     roll = fusion.getRoll();    //you could also use getRollRadians() ecc

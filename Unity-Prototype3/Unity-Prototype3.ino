@@ -1,6 +1,8 @@
 
-/* Inputs and outputs with Unity
+/*
   Interface Lab 2020 Summer
+  Information both from Arduino to Unity and from Unity to Arduino is being sent (IMU)
+  Outputs from Unity come in asynchronous mode and they don't interrupt Arduino, they just change it's behavior
 
 
   Using code examples and libraries from:
