@@ -18,3 +18,5 @@ These examples were developed to explain useful ways that Arduino and Unity can 
 
 **Prototype 3** Arduino and Unity talking to each other (Full Duplex)
 
+Note: Unity package needs to control the flow of information on Windows computers (see examples)
+
