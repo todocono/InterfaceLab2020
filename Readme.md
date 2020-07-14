@@ -1,12 +1,13 @@
-﻿### Interface lab 2020
+﻿# Interface lab 2020
 
-This repo documents best hardware practices using Unity and Arduino.
+This repo documents best hardware practices using Unity and Arduino. These examples were developed to explain useful ways that Arduino and Unity can communicate with each other.
 
-Instructions and video tutorials are hosted at https://medium.com/interface-lab
+We used Arduino Nano 33 IoT, and instructions, blueprints and video tutorials are hosted at https://medium.com/interface-lab
 
-These examples were developed to explain useful ways that Arduino and Unity can communicate with each other.
+#
 
 
+## Arduino Code
 **Prototype 0** From Arduino to Unity, using one digital input
 
 **Prototype 1** From Arduino to Unity, using many sensors
@@ -18,9 +19,13 @@ These examples were developed to explain useful ways that Arduino and Unity can 
 *Note:* Unity package needs to control the flow of information, specially on Windows computers (see examples)
 
 
+#
 
+## Unity package
 
+You should use the option **Assets / Import Package...** in order to decompress and install this file.
 
+#
 
 
 **Software used:** Unity version 2019.3.14f1, [Ardity] (https://github.com/dwilches/Ardity)
