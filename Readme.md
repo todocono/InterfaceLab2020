@@ -1,4 +1,4 @@
-﻿## Interface lab 2020
+﻿### Interface lab 2020
 
 This repo documents best hardware practices using Unity and Arduino.
 
@@ -7,14 +7,17 @@ Instructions and video tutorials are hosted at https://medium.com/interface-lab
 These examples were developed to explain useful ways that Arduino and Unity can communicate with each other.
 
 
+**Prototype 0** From Arduino to Unity, using one digital input
 
-**Prototype 1** From Arduino to Unity
+**Prototype 1** From Arduino to Unity, using many sensors
 
 **Prototype 2** From Unity to Arduino
 
 **Prototype 3** Arduino and Unity talking to each other (Full Duplex)
 
 *Note:* Unity package needs to control the flow of information, specially on Windows computers (see examples)
+
+
 
 
 
