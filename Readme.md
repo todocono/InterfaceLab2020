@@ -16,8 +16,6 @@ We used Arduino Nano 33 IoT, and instructions, blueprints and video tutorials ar
 
 **Prototype 3** Arduino and Unity talking to each other (Full Duplex)
 
-*Note:* Unity package needs to control the flow of information, specially on Windows computers (see examples)
-
 
 #
 
@@ -27,6 +25,9 @@ You should use the option **Assets / Import Package...** in order to decompress 
 
 #
 
+## Notes
+
+The serial communication needs to control the flow of information. One option is to use the Unity package to request an update, what showed to be stable and reliable on Windows computers. Optionally, you can try to use a delay in Arduino as in the example provided in Prototype 0.
 
 **Software used:** Unity version 2019.3.14f1, [Ardity] (https://github.com/dwilches/Ardity)
 
