@@ -1,6 +1,6 @@
 ﻿# Interface lab 2020
 
-This repo documents best hardware practices using Unity and Arduino. These examples were developed to explain useful ways that Arduino and Unity can communicate with each other.
+This repo documents the best hardware practices using Unity and Arduino. These examples were developed to explain useful ways that Arduino and Unity can communicate with each other.
 
 We used Arduino Nano 33 IoT, and instructions, blueprints and video tutorials are hosted at https://medium.com/interface-lab
 
